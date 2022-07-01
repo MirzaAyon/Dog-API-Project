@@ -20,13 +20,26 @@ const displayDog = (doglist) => {
     // console.log(div);
     //hae inspact e div ta create hoise
     for (const dog of first20data) {
-        console.log(dog);
+        // console.log(dog);
         //inspact e prottekta data ke loop kore ber kore ante parsi
         //data gula object akare ache 
-        console.log(dog.name);
+        // console.log(dog.name);
         //shob gula name show korse
+
+        //ekhn div er modhe data gulake dekhabo
+        div.innerHTML = `
+        <h2>${dog.name}</h2>
+        `
+        console.log(div); //button e click korle dekha jabe div gulake pachee
+        main.appendChild(div);//ekta khali dog show krbe 
+        //html er vitore js likar jonoo templete string ta nilam
 
 
     }
 
 }
+//use of slice
+
+// const arr = [2, 3, 4, 5, 6, 7];
+// arr.slice(0, 3);
+// console.log(arr); //2,3,4 show korbe
