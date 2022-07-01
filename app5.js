@@ -14,11 +14,17 @@ const displayDog = (doglist) => {
     //172 tar modhe 20 ta data nibo ei jonno slice use krbo
 
     const first20data = doglist.slice(0, 20);
-    console.log(first20data);
+    // console.log(first20data);
     //20 ta data show kortese
     const div = document.createElement('div');
-    console.log(div);
+    // console.log(div);
     //hae inspact e div ta create hoise
+    for (const dog of first20data) {
+        console.log(dog);
+        //inspact e prottekta data ke loop kore ber kore ante parsi
+        //data gula object akare ache 
 
+
+    }
 
 }
